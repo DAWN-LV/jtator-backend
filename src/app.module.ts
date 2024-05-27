@@ -2,10 +2,11 @@ import { Module } from "@nestjs/common"
 import { AppController } from "./app.controller"
 import { AppService } from "./app.service"
 import { UnitsModule } from "./units/units.module"
-import { OutputModule } from './output/output.module';
+import { OutputModule } from "./output/output.module"
+import { PointModule } from "./point/point.module"
 
 @Module({
-  imports: [UnitsModule, OutputModule],
+  imports: [UnitsModule, OutputModule, PointModule],
   controllers: [AppController],
   providers: [AppService],
 })

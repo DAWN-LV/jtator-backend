@@ -7,7 +7,7 @@ import output from "./entities/output.entity"
 export class OutputsService {
   findAll(dto: FindAllOutputsDto) {
     const resources = {
-      paper: dto.paper || 0,
+      paper: dto.paper || 0, 
       glue: dto.glue || 0,
       ink: dto.ink || 0
     }
@@ -20,6 +20,7 @@ export class OutputsService {
       )
 
       return {
+        id: item.id,
         type: item.type,
         info: item.info,
         count: Math.floor(count)

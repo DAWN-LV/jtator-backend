@@ -1,5 +1,6 @@
 export default [
   {
+    "id": 1,
     "type": "paper",
     "info": {
       "type": "a5",
@@ -11,6 +12,7 @@ export default [
     }
   },
   {
+    "id": 2,
     "type": "paper",
     "info": {
       "type": "a4",
@@ -22,6 +24,7 @@ export default [
     }
   },
   {
+    "id": 3,
     "type": "paper",
     "info": {
       "type": "a3",
@@ -33,6 +36,7 @@ export default [
     }
   },
   {
+    "id": 4,
     "type": "degree",
     "info": {
       "type": "a4",
@@ -45,6 +49,7 @@ export default [
     }
   },
   {
+    "id": 5,
     "type": "notebook",
     "info": {
       "type": "a5",
@@ -58,6 +63,7 @@ export default [
     }
   },
   {
+    "id": 6,
     "type": "notebook",
     "info": {
       "type": "a4",
@@ -71,6 +77,7 @@ export default [
     }
   },
   {
+    "id": 7,
     "type": "sketchbook",
     "info": {
       "type": "a4",
@@ -83,6 +90,7 @@ export default [
     }
   },
   {
+    "id": 8,
     "type": "diary",
     "info": {
       "type": "a5",
@@ -96,6 +104,7 @@ export default [
     }
   },
   {
+    "id": 9,
     "type": "journal",
     "info": {
       "type": "a5",
@@ -109,6 +118,7 @@ export default [
     }
   },
   {
+    "id": 10,
     "type": "planner",
     "info": {
       "type": "a6",
@@ -122,6 +132,7 @@ export default [
     }
   },
   {
+    "id": 11,
     "type": "photo_album",
     "info": {
       "type": "a4",
