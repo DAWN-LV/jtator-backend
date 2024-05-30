@@ -1,10 +1,11 @@
 import { Injectable } from "@nestjs/common"
+import { OutputService } from "src/output/outputs.service"
 
-import points from "./entities/point.entity"
+import entities from "./entities/point.entity"
 
 @Injectable()
 export class PointService {
   findOne(productId: number) {
-    return points.find(point => point.productIds.includes(productId))
+    return entities.find(entity => entity.productIds.includes(productId))
   }
 }

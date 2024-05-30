@@ -1,10 +1,10 @@
 import { Injectable } from "@nestjs/common"
 import { FindAllOutputsDto } from "./dto/find-all-outputs.dto"
 
-import output from "./entities/output.entity"
+import entities from "./entities/output.entity"
 
 @Injectable()
-export class OutputsService {
+export class OutputService {
   findAll(dto: FindAllOutputsDto) {
     const resources = {
       paper: dto.paper || 0, 
@@ -12,7 +12,7 @@ export class OutputsService {
       ink: dto.ink || 0
     }
 
-    const outputs = output.map(item => {
+    const outputs = entities.map(item => {
       const count = Math.min(
         ...Object.entries(item.units).map(([key, value]) => {
           return resources[key] / value

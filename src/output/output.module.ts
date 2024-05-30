@@ -1,9 +1,9 @@
 import { Module } from "@nestjs/common"
-import { OutputsService } from "./outputs.service"
-import { OutputsController } from "./outputs.controller"
+import { OutputService } from "./outputs.service"
+import { OutputController } from "./outputs.controller"
 
 @Module({
-  controllers: [OutputsController],
-  providers: [OutputsService],
+  controllers: [OutputController],
+  providers: [OutputService],
 })
 export class OutputModule {}
